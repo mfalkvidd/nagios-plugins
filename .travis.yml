@@ -8,5 +8,8 @@ install:
 script:
     - tools/setup && ./configure && make
 
+compiler:
+    - clang
+    - gcc
 #notifications:
 #  email: false
