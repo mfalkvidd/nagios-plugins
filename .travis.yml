@@ -18,7 +18,8 @@ compiler:
     - clang
     - gcc
 #notifications:
-#  email: false
+#  email:
+#    - 
 
 # Don't use Clang for Coverity Scan.
 matrix:
