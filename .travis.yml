@@ -25,7 +25,7 @@ compiler:
 matrix:
   exclude:
     - compiler: clang
-    - env: COVERITY_SCAN_BRANCH=1
+      env: COVERITY_SCAN_BRANCH=1
 
 env:
   global:
