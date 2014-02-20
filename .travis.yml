@@ -14,18 +14,9 @@ before_script:
 script:
   - if [ "$COVERITY_SCAN_BRANCH" != 1 ]; then make; fi
 
-compiler:
-  - clang
-  - gcc
 #notifications:
 #  email:
 #    - 
-
-# Don't use Clang for Coverity Scan.
-matrix:
-  exclude:
-    - compiler: clang
-      env: COVERITY_SCAN_BRANCH=1
 
 env:
   global:
